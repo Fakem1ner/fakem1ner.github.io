@@ -1,0 +1,132 @@
+* {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+html {
+  background-color: #333;
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form__element {
+  margin: 15px 0;
+}
+
+.form__label {
+  display: block;
+  font-size: 18px;
+  margin: 3px 0;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 15px;
+          box-shadow: rgba(255, 255, 255, 0.3) 0 0 15px;
+  border-radius: 8px;
+  color: crimson;
+}
+
+.form__title {
+  display: block;
+  font-size: 18px;
+  margin: 3px 0;
+}
+
+.form__radio {
+  display: none;
+}
+
+.form__radio:checked + .form__label::after {
+  opacity: 1;
+}
+
+.form__radio + .form__label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.form__radio + .form__label::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.form__radio + .form__label::after {
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: crimson;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  opacity: 0;
+}
+
+.form__text-area {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 15px;
+          box-shadow: rgba(255, 255, 255, 0.3) 0 0 15px;
+  border-radius: 8px;
+  color: crimson;
+}
+
+.form__button {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px;
+  background-color: crimson;
+  border: none;
+  border-radius: 18px;
+}
+
+.form__button:hover {
+  background-color: #ad2540;
+}
+
+.form__button:active {
+  background-color: #641726;
+}

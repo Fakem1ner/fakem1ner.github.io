@@ -1,0 +1,127 @@
+* {
+  font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+html {
+	background-color: #333;
+	min-height: 100vh;
+}
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.form {
+	flex-grow: 1;
+  max-width: 500px;
+  margin: 0 auto;
+		// .form__element
+		&__element {
+      margin: 15px 0;
+    }
+		// .form__label
+		&__label {
+      display: block;
+			font-size: 18px;
+			margin: 3px 0;
+    }
+		// .form__input
+		&__input {
+      width: 100%;
+      padding: 10px;
+			font-size: 20px;
+			border: none;
+			box-shadow: rgba(255, 255, 255, 0.300) 0 0 15px;
+			border-radius: 8px;
+			color: crimson;
+    }
+		// .form__title
+		&__title {
+			display: block;
+			font-size: 18px;
+			margin: 3px 0;
+		}
+		// .form__options
+		&__options {}
+		// .form__option
+		&__option {}
+		// .form__radio
+		&__radio {
+			display: none;
+
+			&:checked + .form__label::after {
+				opacity: 1;
+			}
+
+      & + .form__label {
+				display: inline-flex;
+        align-items: center;
+				position: relative;
+
+				&::before {
+					content: '';
+
+					display: inline-block;
+					width: 24px;
+					height: 24px;
+
+					background-color: #eee;
+					border-radius: 50%;
+					margin-right: 10px;
+				}
+      }
+
+			& + .form__label::after {
+				transition: opacity 0.3s ease;
+				content: '';
+
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+
+				background-color: crimson;
+				border-radius: 50%;
+				margin-right: 10px;
+				
+				position: absolute;
+				left: 3px;
+				top: 3px;
+
+				opacity: 0;
+			}
+			
+    }
+		// .form__text-area
+		&__text-area {
+			width: 100%;
+      padding: 10px;
+			font-size: 20px;
+			border: none;
+			box-shadow: rgba(255, 255, 255, 0.300) 0 0 15px;
+			border-radius: 8px;
+			color: crimson;
+		}
+
+		&__button {
+			transition: all 0.5s ease;
+			width: 100%;
+			font-size: 25px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			padding: 10px;
+			background-color: crimson;
+			border: none;
+			border-radius: 18px;
+
+			&:hover {
+				background-color: rgb(173, 37, 64);
+			}
+
+			&:active {
+				background-color: rgb(100, 23, 38);
+			}
+		}
+}

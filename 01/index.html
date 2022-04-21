@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стилизация формы на чистом CSS</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form class="form" method="get">
+
+        <div class="form__element">
+          <label for="nickname" class="form__label">Никнейм:</label>
+          <input type="text" class="form__input" id="nickname" name="nickname">
+        </div>
+
+        <div class="form__element">
+          <label for="favouriteyoutuber" class="form__label">Любимый ютубер:</label>
+          <input type="text" class="form__input" id="favouriteyoutuber" name="favouriteyoutuber">
+        </div>
+
+        <div class="form__element">
+          <div class="form__title">Любимая игра:</div>
+          <div class="form__options">
+            <div class="form__option">
+              <input type="radio" class="form__radio" name="favouritegame" id="minecraft" value="Minecraft">
+              <label for="minecraft" class="form__label">Minecraft</label>
+            </div>
+            <div class="form__option">
+              <input type="radio" class="form__radio" name="favouritegame" id="terraria" value="Terraria">
+              <label for="terraria" class="form__label">Terraria</label>
+            </div>
+            <div class="form__option">
+              <input type="radio" class="form__radio" name="favouritegame" id="brawl_stars" value="Brawl Stars">
+              <label for="brawl_stars" class="form__label">Brawl Stars</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__element">
+          <label for="about" class="form__label">Несколько прилагательных о себе:</label>
+          <textarea name="about" id="about" cols="30" rows="6" class="form__text-area"></textarea>
+        </div>
+
+        <div class="form__element">
+          <button class="form__button" type="submit">Отправить</button>
+        </div>
+        <div class="_result"></div>
+      </form>
+      
+    </div>
+    <script src="https://partner21.github.io/js/getQueryVariable.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
