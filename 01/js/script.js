@@ -16,7 +16,7 @@ form.addEventListener('submit', function(e) {
       result.innerHTML = `Привет! Свое имя я тебе не скажу, но мой ник - ${nickname}. Мой любимый ютубер - ${favouriteYoutuber}. Я играю в разные игры, но моя любимая - ${favouriteGame}. А еще я ${about}`;
     }
     else {
-      alert('Значение поля "Любимый ютубер" не может быть Fakeminer!');
+      result.innerHTML = `Привет! Свое имя я тебе не скажу, но мой ник - ${nickname}. Мой любимый ютубер - самый лучший во всем мире. Я играю в разные игры, но моя любимая - ${favouriteGame}. А еще я ${about}`;
     }
   }
   catch {
