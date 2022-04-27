@@ -2,6 +2,9 @@
 title: Fakem1ner.Github.Io
 timezone: UTC
 collections:
+  fmestarttemplate:
+    title: FmeStartTemplate
+    output: true
   posts:
     title: Posts
     output: true
