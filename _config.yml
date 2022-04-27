@@ -8,4 +8,4 @@ collections:
   uploads:
     title: Uploads
     output: true
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-architect
