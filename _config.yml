@@ -11,4 +11,4 @@ collections:
   uploads:
     title: Uploads
     output: true
-theme: template
+theme: jekyll-theme-cayman
