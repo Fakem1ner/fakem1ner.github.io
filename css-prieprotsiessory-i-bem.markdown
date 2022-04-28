@@ -50,6 +50,7 @@ date: 2022-04-28 10:58:00 Z
 ## Обработка препроцессоров в css
 Обработка препроцессоров бывает 4 видов - nested, expanded, compact и compressed. Все они выдадут разные css файлы, вот примеры:
 ### Nested
+Предназначен для просмотра DOM-дерева
 ```css
 #main {
 color: #fff;
@@ -59,6 +60,7 @@ background-color: #000; }
 .huge { font-size: 10em; font-weight: bold; text-decoration: underline; }
 ```
 ### Expanded
+Предназначено для просмотра селекторов и классов
 ```css
 #main {
  color: #fff;
@@ -74,12 +76,14 @@ background-color: #000; }
 }
 ```
 ### Compact
+Предназначено для просмотра селекторов
 ```css
 #main { color: #fff; background-color: #000; }
 #main p { width: 10em; }
 .huge { font-size: 10em; font-weight: bold; text-decoration: underline; }
 ```
 ### Compressed
+Не предназначено для чтения человеком
 ```css
 #main{color:#fff;background-color:#000}#main p{width:10em}.huge{font-size:10em;font-weight:bold;text-decoration:underline}
 ```
