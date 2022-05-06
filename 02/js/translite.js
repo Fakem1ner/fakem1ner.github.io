@@ -1,0 +1,37 @@
+function translite(string) {
+  string = string.toLowerCase();
+  string = string.split('а').join('a');
+  string = string.split('б').join('b');
+  string = string.split('в').join('v');
+  string = string.split('г').join('g');
+  string = string.split('д').join('d');
+  string = string.split('е').join('e');
+  string = string.split('ё').join('e');
+  string = string.split('ж').join('zh');
+  string = string.split('з').join('z');
+  string = string.split('и').join('i');
+  string = string.split('й').join('y');
+  string = string.split('к').join('k');
+  string = string.split('л').join('l');
+  string = string.split('м').join('m');
+  string = string.split('н').join('n');
+  string = string.split('о').join('o');
+  string = string.split('п').join('p');
+  string = string.split('р').join('r');
+  string = string.split('с').join('s');
+  string = string.split('т').join('t');
+  string = string.split('у').join('u');
+  string = string.split('ф').join('f');
+  string = string.split('х').join('h');
+  string = string.split('ц').join('c');
+  string = string.split('ч').join('ch');
+  string = string.split('ш').join('sh');
+  string = string.split('щ').join('sch');
+  string = string.split('ъ').join('');
+  string = string.split('ы').join('y');
+  string = string.split('ь').join('');
+  string = string.split('э').join('e');
+  string = string.split('ю').join('yu');
+  string = string.split('я').join('ya');
+  return string;
+}
