@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #008B8B;
+}
+
+[class$="__container"] {
+  max-width: 1165px;
+  margin: 0 auto;
+}
