@@ -1,0 +1,40 @@
+let result = document.querySelector('#result');
+
+
+    let etvalue = getQueryVariable('text');
+    etvalue = etvalue.split('qlas').join('а');
+    etvalue = etvalue.split('qasdf').join('б');
+    etvalue = etvalue.split('01001').join('в');
+    etvalue = etvalue.split('121-0001').join('г');
+    etvalue = etvalue.split('qxgc').join('д');
+    etvalue = etvalue.split('dddd').join('е');
+    etvalue = etvalue.split('asdhfjhjf').join('ё');
+    etvalue = etvalue.split('asddgjjh').join('ж');
+    etvalue = etvalue.split('qqqasassf').join('з');
+    etvalue = etvalue.split('1111').join('и');
+    etvalue = etvalue.split('asdasdsa').join('й');
+    etvalue = etvalue.split('dahhvc').join('к');
+    etvalue = etvalue.split('sssss').join('л');
+    etvalue = etvalue.split('gnsdgk').join('м');
+    etvalue = etvalue.split('asdrgv').join('н');
+    etvalue = etvalue.split('ddfknkb').join('о');
+    etvalue = etvalue.split('asdfjourfv').join('п');
+    etvalue = etvalue.split('asahbcc').join('р');
+    etvalue = etvalue.split('aazxzxv').join('с');
+    etvalue = etvalue.split('sdfsdf').join('т');
+    etvalue = etvalue.split('zxas').join('у');
+    etvalue = etvalue.split('sdq[w').join('ф');
+    etvalue = etvalue.split('fghfghuu').join('х');
+    etvalue = etvalue.split('fghfgh').join('ц');
+    etvalue = etvalue.split('asdas').join('ч');
+    etvalue = etvalue.split('hhdfhdfhfddsg').join('ш');
+    etvalue = etvalue.split('sdfbdk').join('щ');
+    etvalue = etvalue.split('1pp2p2').join('ъ');
+    etvalue = etvalue.split('eferer').join('ы');
+    etvalue = etvalue.split('asitlv').join('ь');
+    etvalue = etvalue.split('asjkmqq').join('э');
+    etvalue = etvalue.split('akmqx').join('ю');
+    etvalue = etvalue.split('astvcvvh').join('я');
+
+    etvalue = etvalue.split('-').join(' ');
+    result.innerHTML = etvalue;
