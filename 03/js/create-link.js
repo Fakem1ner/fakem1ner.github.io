@@ -40,5 +40,5 @@ button.addEventListener('click', function() {
     etvalue = etvalue.split(' ').join('-');
     
     
-    result.innerHTML = etvalue;
+    result.innerHTML = `<a href="https://fakem1ner.github.io/03/read-link.html?text=${etvalue}">Ссылка</a>`;
 });
