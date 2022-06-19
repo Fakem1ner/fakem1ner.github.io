@@ -1,0 +1,7 @@
+input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+}
