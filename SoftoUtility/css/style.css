@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* start.html */
+
+.start {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.start__title {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.start__loading {
+    margin-top: 45px;
+}
+
+/* main.html */
+
+.main body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/Softo\ BG.png') 0 0/100% 100% no-repeat;
+}
+
+.dock {
+    background-color: #ffffff70;
+    height: 50px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    position: relative;
+}
+.menu__icon,
+.menu__icon::before, 
+.menu__icon::after {
+    transition: all 0.3s ease;
+}
+
+.menu__icon {
+    width: 35px;
+    height: 4px;
+    background-color: #000;
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.menu__icon::before, 
+.menu__icon::after {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+}
+.menu.open .menu__icon {
+    background-color: #00000000;
+}
+.menu.open .menu__icon::before {
+    transform: rotateZ(45deg);
+}
+.menu.open .menu__icon::after {
+    transform: rotateZ(-45deg);
+}
+.menu.open .menu__icon::before, 
+.menu.open .menu__icon::after {
+    top: 0;
+}
+.menu__icon::before {
+    bottom: 10px;
+}
+
+.menu__icon::after {
+    top: 10px;
+}
+
+.menu__body {
+    transition: all 0.5s ease;
+    width: 600px;
+    height: 700px;
+    background-color: #ffffff00;
+    position: absolute;
+    bottom: -1000px;
+    border-radius: 8px;
+    padding: 25px;
+    z-index: 1;
+}
+
+.menu.open .menu__body {
+    bottom: 55px;
+    background-color: #ffffff70;
+}
+
+.dock__clock {
+    position: absolute;
+    right: 15px;
+    font-weight: 500;
+    text-align: right;
+    font-size: 14px;
+}
+.dock__clock-tip {
+    transition: all 0.2s ease;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    font-size: 18px;
+    width: 160px;
+    background-color: #fff;
+    text-align: center;
+    padding: 3px;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.dock__clock:hover .dock__clock-tip {
+    bottom: 20px;
+    opacity: 1;
+}
+
+.menu__close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: #000;*/
+    z-index: 0;
+}
+.menu__search {
+    border: none;
+    display: block;
+    width: calc(600px - 20px);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.menu__app-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.menu__app-icon {
+    transition: background-color 0.3s ease;
+    width: 70px;
+    height: 70px;
+    margin: 12px;
+    border-radius: 8px;
+    background-color: #00000010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.menu__app-icon:hover {
+    background-color: #00000070;
+    
+}
+
+.menu__app-icon * {
+    max-width: 40px;
+    max-height: 100%;
+}
+
+.menu__app-icon::before { 
+    transition: all 0.2s ease;
+    content: attr(data-tip);
+    position: absolute;
+    top: 10px;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.menu__app-icon:hover::before {
+    opacity: 1;
+    top: -10px;
+} 
+
+/* ----- */
