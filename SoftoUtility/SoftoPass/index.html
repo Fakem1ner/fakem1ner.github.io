@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softo Pass - Генератор паролей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="info">
+                <h1 class="info__title">Сгенерируйте надежный пароль</h1>
+                <p class="info__description">
+                    Сейчас многие браузеры умеют генерировать 
+                    пароли автоматически, но что, если вам
+                    необходим необычный пароль, где будет
+                    определенное количество символов, возможно
+                    будут только буквы или цифры? Тогда вам необходим
+                    один из самых гибких генераторов паролей от Softo Cloud - 
+                    Softo Pass
+                </p>
+            </div>
+            <div class="generate">
+                <div class="generate__part">
+                    <label class="generate__label" for="count">Количество символов</label>
+                    <input class="generate__input" type="number" name="count" id="count" value="8">
+                </div>
+                <div class="generate__part">
+                    <input class="generate__checkbox" type="checkbox" name="useletters" id="useletters">
+                    <label class="generate__label" for="useletters">Использовать буквы</label>
+                </div>
+                <div class="generate__part">
+                    <input class="generate__checkbox" type="checkbox" name="usecapitalletters" id="usecapitalletters">
+                    <label class="generate__label" for="usecapitalletters">Использовать заглавные буквы</label>
+                </div>
+                <div class="generate__part">
+                    <input class="generate__checkbox" type="checkbox" name="usenumbers" id="usenumbers">
+                    <label class="generate__label" for="usenumbers">Использовать цифры</label>
+                </div>
+                <div class="generate__part">
+                    <input class="generate__checkbox" type="checkbox" name="usespecialsymbols" id="usespecialsymbols">
+                    <label class="generate__label" for="usespecialsymbols">Использовать специальные символы</label>
+                </div>
+                <div class="generate__part">
+                    <button class="generate__button" id="run">Сгенерировать</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

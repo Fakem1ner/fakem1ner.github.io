@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900');
+
+*{font-family:'Montserrat',sans-serif;
+   padding:0;margin:0;color:#fff;}
+
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 5px auto;
+}
+
+.info {}
+.info__title {
+    margin: 10px 0;
+}
+.info__description {
+    margin: 10px 0;
+}
+
+.generate {}
+.generate__part {
+    display: flex;
+    align-items: center;
+    
+}
+
+.generate__label {
+    margin-right: 10px;
+}
+.generate__input {
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    padding: 7px;
+    text-align: center;
+    width: 40px;
+    background-color: #ffffff70;
+    border-radius: 8px;
+}
+
+.generate__input:hover,
+.generate__input:focus {
+    background-color: #ffffff;
+}
+
+.generate__checkbox {
+    display: none;
+}
+
+.generate__checkbox + label {
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.generate__checkbox + label::before {
+    transition: background-color 0.3s ease;
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff70;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.generate__checkbox + label:hover::before {
+    background-color: #ffffff90;
+}
+
+.generate__checkbox + label::after {
+    transition: background-color 0.3s ease;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #33333300;
+    position: absolute;
+    left: 3px;
+    border-radius: 5px;
+}
+.generate__checkbox + label:hover::after {
+    background-color: #33333350;
+}
+
+.generate__checkbox:checked + label::after {
+    background-color: #333333;
+}
+
+.generate__button {
+    transition: background-color 0.3s ease;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #ffffff70;
+}
+.generate__button:hover {
+    background-color: #ffffff90;
+}
+.generate__button:active {
+    background-color: #ffffff;
+}
