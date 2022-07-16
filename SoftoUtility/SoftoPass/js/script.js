@@ -59,5 +59,5 @@ button.addEventListener('click', function() {
     }
 
     password = password.split('undefined').join('')
-    console.log(password)
+    document.querySelector('#result').innerHTML = password;
 });

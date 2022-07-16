@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Softo Pass - Генератор паролей</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
     <div class="wrapper">
@@ -24,7 +25,7 @@
             <div class="generate">
                 <div class="generate__part">
                     <label class="generate__label" for="count">Количество символов</label>
-                    <input class="generate__input" type="number" name="count" id="count" value="8">
+                    <input class="generate__input" type="number" name="count" id="count" value="8" max="64">
                 </div>
                 <div class="generate__part">
                     <input class="generate__checkbox" type="checkbox" name="useletters" id="useletters">
@@ -46,6 +47,7 @@
                     <button class="generate__button" id="run">Сгенерировать</button>
                 </div>
             </div>
+            <div class="result" id="result"></div>
         </main>
     </div>
     <script src="js/script.js"></script>
